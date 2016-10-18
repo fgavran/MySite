@@ -1,0 +1,121 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,code,blockquote,th,td{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;box-sizing:border-box;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul,ol{list-style-type:none}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}table{border-collapse:collapse;border-spacing:0}img,fieldset{border:none}caption,th{text-align: left}q:before,q:after{content:''}header,hgroup,nav,article,time,section,aside,footer{display:block}
+
+body {
+	background:#4169E1;
+	font-family: "Source Sans Pro";
+	color:#111;
+	padding-top:1vw;
+	text-align:center;
+	position:relative;
+}
+.introd {
+	color:#eef;
+}
+#headshot {
+	border-radius:50%;
+}
+.introd h1 {
+	display:inline;
+	font-size:3em;
+}
+.introd h2 {
+	font-size:1.5em;
+	margin-bottom:0.5em;
+}
+.introd > p {
+	display:inline;
+}
+.introd__sub {
+	background:#eef;
+	margin:0 5px;
+	color:#111;
+	border-radius:10px;
+}
+.introd a img {
+	max-width:48px;
+	border-radius:12px;
+}
+.skills__lang {
+	width: 100%;
+	background:#111;
+	color:#eef;
+}
+.skills__lang img {
+	max-height:2em;
+	max-width:30px;
+	border-radius:20%;
+}
+.skills__code {
+	width:100%;
+	background:#eef;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+.skills__code h5 {
+	flex-basis:100%;
+}
+.skills__code img {
+	max-height:3em;
+	max-width:3em;
+}
+.portfolio {
+	max-width:75%;
+	margin:1em auto;
+	padding:0.5em;
+	background:#eef;
+	color:#111;
+	border-radius: 12px;
+}
+.portfolio h6 {
+	font-size:1.5em;
+}
+/* Media queries for medium screens */
+@media screen and (min-width:481px) {
+	.introd {
+		max-width: : 50%;
+		margin-left: 10%;
+		margin-right:30%;
+		text-align:center;
+	}
+	.skills {
+		max-width:30%;
+		position:absolute;
+		top:0;
+		top:1vw;
+		right:0;
+	}
+}
+
+/* Media queries for small screens */
+@media screen and (max-width:480px) {
+	body div {
+		position:relative;
+		margin:0 auto;
+		width:100%;}
+	.introd__sub {
+		padding:5px;
+	}
+	.introd h1 {
+		display:block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
