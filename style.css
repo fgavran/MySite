@@ -1,103 +1,148 @@
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,code,blockquote,th,td{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;box-sizing:border-box;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul,ol{list-style-type:none}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}table{border-collapse:collapse;border-spacing:0}img,fieldset{border:none}caption,th{text-align: left}q:before,q:after{content:''}header,hgroup,nav,article,time,section,aside,footer{display:block}
 
 body {
-	background:#4169E1;
+	background:#e8eaf6;
 	font-family: "Source Sans Pro";
 	color:#111;
-	padding-top:1vw;
-	text-align:center;
 	position:relative;
 }
-.introd {
+header {
+	background:#303f9f;
 	color:#eef;
+	text-align:center;
+	padding:0.5rem 0;
+}
+header * {
+	display:inline;
+	margin-right:5vw;
+	vertical-align: middle;
+	font-size:3rem;
 }
 #headshot {
 	border-radius:50%;
 }
-.introd h1 {
-	display:inline;
-	font-size:3em;
+/*End of top bar*/
+.introd, .portfolio {
+	background:#f8f8f8;
+	color:#111;
+	margin:1rem 0 1rem 3%;
+	width: 45.5%;
+	float:left;
+	text-align: center;
 }
 .introd h2 {
 	font-size:1.5em;
 	margin-bottom:0.5em;
 }
-.introd > p {
+.introd p {
+}
+.introd h4 {
 	display:inline;
+	float:left;
+	margin:2rem 1rem 0 1rem;
+	border-bottom:0.5rem solid #ffc107;
+	font-size:1.5rem;
 }
-.introd__sub {
-	background:#eef;
-	margin:0 5px;
-	color:#111;
-	border-radius:10px;
-}
-.introd a img {
-	max-width:48px;
-	border-radius:12px;
-}
-.skills__lang {
-	width: 100%;
-	background:#111;
+.introd__contact {
+	clear:left;
+	margin:5rem 1rem 1rem 1rem;
+	background:#3f51b5;
 	color:#eef;
+	height:6rem;
+	text-align: left;
+	padding:1rem 1rem 1rem 1rem;
+	overflow: scroll;
 }
-.skills__lang img {
-	max-height:2em;
-	max-width:30px;
-	border-radius:20%;
+.introd__contact__mailto, .introd__contact__linkedin {
+	float:left;
+	clear:left;
+	height:1.5rem;
+	width:1.5rem:
+	padding:0.5rem;
 }
-.skills__code {
-	width:100%;
-	background:#eef;
+.introd__contact__linkedin {
+	background:#0077B5;
+}
+.introd__contact p {
+	display:inline;
+	float:left;
+	padding:0 0 1rem 1rem;
+}
+/*End of intro*/
+.portfolio {
+	max-width:75%;
+	padding:0.5em;
+}
+.portfolio h6 {
+	font-size:1.5em;
+}
+/*End of portfolio*/
+.skills {
+	clear:left;
+}
+.skills > * {
+	float:left;
+	background:#f8f8f8;
+	color:#111;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
 	align-items:center;
 }
-.skills__code h5 {
+.skills * {
+	margin-bottom:0.5em;
+}
+.skills h5 {
 	flex-basis:100%;
+	text-align:center;
+}
+.skills__lang {
+	width:30%;
+	justify-content: space-between;
+}
+.skills__lang__orphanhack {
+	flex:1 1 30%;
+	display: flex;
+	justify-content: space-around;
+}
+.skills__lang img {
+	max-height:2.5em;
+	max-width:2.5em;
+	border-radius:20%;
+	margin-left:0.5em;
+}
+.skills__code {
+	width:30%;
+	margin-left:5%;
+	justify-content:center;
+}
+.skills__code__orphanhack {
+	flex:0 0 45%;
+	display: flex;
+	justify-content: space-around;
 }
 .skills__code img {
-	max-height:3em;
 	max-width:3em;
+	max-height:3em;
+	margin-left:0.5em;
 }
-.portfolio {
-	max-width:75%;
-	margin:1em auto;
-	padding:0.5em;
-	background:#eef;
-	color:#111;
-	border-radius: 12px;
-}
-.portfolio h6 {
-	font-size:1.5em;
-}
-/* Media queries for medium screens */
-@media screen and (min-width:481px) {
-	.introd {
-		max-width: : 50%;
-		margin-left: 10%;
-		margin-right:30%;
-		text-align:center;
-	}
-	.skills {
-		max-width:30%;
-		position:absolute;
-		top:0;
-		top:1vw;
-		right:0;
-	}
-}
-
+/*And now shadows*/
+.introd, .portfolio {
+	box-shadow:0 8px 10px 1px rgba(0,0,0,0.14),0 3px 14px 2px rgba(0,0,0,0.12),0 5px 5px -3px rgba(0,0,0,0.3)}
+header {box-shadow:0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.3)}
+.skills > * {box-shadow:0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2)}
 /* Media queries for small screens */
-@media screen and (max-width:480px) {
-	body div {
+@media screen and (max-width:619px) {
+
+	.introd, .portfolio, .skills__lang, .skills__code {
 		position:relative;
-		margin:0 auto;
-		width:100%;}
-	.introd__sub {
-		padding:5px;
+		float:none;
+		margin:1.5rem auto 1rem;
+		width:90%;
 	}
-	.introd h1 {
+}
+@media screen and (max-width: 370px) {
+	header h1 {
 		display:block;
 	}
 }
